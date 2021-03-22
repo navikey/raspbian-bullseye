@@ -11,4 +11,6 @@ Minimal image based on Raspbian Stretch Lite with all updates to Bullseye. See b
 
 Including all Raspberry Pi hardware drivers (/opt/vc & etc.) and modules.
 
-See also repository [navikey/raspbian-buster](https://github.com/navikey/raspbian-buster).
+### See also
+
+* Repository [navikey/raspbian-buster](https://github.com/navikey/raspbian-buster).
