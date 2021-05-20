@@ -13,7 +13,7 @@ RUN true \
 	&& apt-get autoremove --purge -y \
 	&& apt-get clean -y \
 	# Switch to Bullseye repository.
-	&& sed -i 's/raspbian stretch/raspbian bullseye/g' /etc/apt/sources.list \
+	&& sed -i 's/stretch/bullseye/g' /etc/apt/sources.list \
 	# Update all packages.
 	&& apt-get update \
 	&& apt-get upgrade -y \
@@ -25,7 +25,7 @@ RUN true \
 	&& rm -f /usr/sbin/policy-rc.d
 
 # Collapse image to single layer.
-FROM scratch AS raspbian-bullseye
+FROM scratch
 
 LABEL maintainer="Mikhail Snetkov <msnetkov@navikey.ru>"
 
